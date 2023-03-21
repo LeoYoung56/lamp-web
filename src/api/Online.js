@@ -3,11 +3,11 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   list: {
     method: 'POST',
-    url: `/authority/online/list`
+    url: `/online/list`
   },
   t: {
     method: 'POST',
-    url: `/authority/online/t`
+    url: `/online/t`
   }
 }
 

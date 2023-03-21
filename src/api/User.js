@@ -3,55 +3,55 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   page: {
     method: 'POST',
-    url: `/authority/user/page`
+    url: `/user/page`
   },
   save: {
     method: 'POST',
-    url: `/authority/user`
+    url: `/user`
   },
   update: {
     method: 'PUT',
-    url: `/authority/user`
+    url: `/user`
   },
   updateBaseInfo: {
     method: 'PUT',
-    url: `/authority/user/base`
+    url: `/user/base`
   },
   avatar: {
     method: 'PUT',
-    url: `/authority/user/avatar`
+    url: `/user/avatar`
   },
   delete: {
     method: 'DELETE',
-    url: `/authority/user`
+    url: `/user`
   },
   reset: {
     method: 'POST',
-    url: `/authority/user/reset`
+    url: `/user/reset`
   },
   updatePassword: {
     method: 'PUT',
-    url: `/authority/user/password`
+    url: `/user/password`
   },
   reload: {
     method: 'POST',
-    url: `/authority/user/reload`
+    url: `/user/reload`
   },
   preview: {
     method: 'POST',
-    url: `/authority/user/preview`
+    url: `/user/preview`
   },
   export: {
     method: 'POST',
-    url: `/authority/user/export`
+    url: `/user/export`
   },
   import: {
     method: 'POST',
-    url: `/authority/user/import`
+    url: `/user/import`
   },
   find: {
     method: 'GET',
-    url: `/authority/user/findAll`
+    url: `/user/findAll`
   }
 }
 
@@ -95,7 +95,7 @@ export default {
   get (id) {
     return axiosApi({
       method: 'GET',
-      url: `/authority/user/${id}`
+      url: `/user/${id}`
     })
   },
   reset (data) {

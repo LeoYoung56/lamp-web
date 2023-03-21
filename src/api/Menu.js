@@ -3,19 +3,19 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   allTree: {
     method: 'POST',
-    url: `/authority/menu/tree`
+    url: `/menu/tree`
   },
   save: {
     method: 'POST',
-    url: `/authority/menu`
+    url: `/menu`
   },
   update: {
     method: 'PUT',
-    url: `/authority/menu`
+    url: `/menu`
   },
   delete: {
     method: 'DELETE',
-    url: `/authority/menu`
+    url: `/menu`
   }
 }
 

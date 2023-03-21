@@ -3,31 +3,31 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   allTree: {
     method: 'GET',
-    url: `/authority/org/tree`
+    url: `/org/tree`
   },
   save: {
     method: 'POST',
-    url: `/authority/org`
+    url: `/org`
   },
   update: {
     method: 'PUT',
-    url: `/authority/org`
+    url: `/org`
   },
   delete: {
     method: 'DELETE',
-    url: `/authority/org`
+    url: `/org`
   },
   preview: {
     method: 'POST',
-    url: `/authority/org/preview`
+    url: `/org/preview`
   },
   export: {
     method: 'POST',
-    url: `/authority/org/export`
+    url: `/org/export`
   },
   import: {
     method: 'POST',
-    url: `/authority/org/import`
+    url: `/org/import`
   }
 }
 

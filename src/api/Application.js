@@ -3,31 +3,31 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   page: {
     method: 'POST',
-    url: `/authority/application/page`,
+    url: `/application/page`,
   },
   update: {
     method: 'PUT',
-    url: `/authority/application`
+    url: `/application`
   },
   save: {
     method: 'POST',
-    url: `/authority/application`
+    url: `/application`
   },
   delete: {
     method: 'DELETE',
-    url: `/authority/application`
+    url: `/application`
   },
   preview: {
     method: 'POST',
-    url: `/authority/application/preview`
+    url: `/application/preview`
   },
   export: {
     method: 'POST',
-    url: `/authority/application/export`
+    url: `/application/export`
   },
   import: {
     method: 'POST',
-    url: `/authority/application/import`
+    url: `/application/import`
   }
 }
 

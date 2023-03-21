@@ -3,27 +3,27 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   page: {
     method: 'POST',
-    url: `/authority/optLog/page`
+    url: `/optLog/page`
   },
   delete: {
     method: 'DELETE',
-    url: `/authority/optLog`
+    url: `/optLog`
   },
   clear: {
     method: 'DELETE',
-    url: `/authority/optLog/clear`
+    url: `/optLog/clear`
   },
   preview: {
     method: 'POST',
-    url: `/authority/optLog/preview`
+    url: `/optLog/preview`
   },
   export: {
     method: 'POST',
-    url: `/authority/optLog/export`
+    url: `/optLog/export`
   },
   import: {
     method: 'POST',
-    url: `/authority/optLog/import`
+    url: `/optLog/import`
   }
 }
 
@@ -36,7 +36,7 @@ export default {
   },
   get (id) {
     return axiosApi({
-      url: `/authority/optLog/${id}`,
+      url: `/optLog/${id}`,
       method: 'get'
     })
   },

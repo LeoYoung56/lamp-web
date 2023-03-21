@@ -3,23 +3,23 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   page: {
     method: 'POST',
-    url: `/file/file/page`
+    url: `/file/page`
   },
   upload: {
     method: 'POST',
-    url: `/file/file/anyone/upload`
+    url: `/file/anyone/upload`
   },
   findUrlById: {
     method: 'POST',
-    url: `/file/file/anyone/findUrlById`
+    url: `/file/anyone/findUrlById`
   },
   download: {
     method: 'POST',
-    url: `/file/file/download`
+    url: `/file/download`
   },
   delete: {
     method: 'DELETE',
-    url: `/file/file`
+    url: `/file`
   }
 }
 

@@ -374,7 +374,7 @@ export default {
         isVisible: false,
         type: "import",
         action: `${process.env.VUE_APP_BASE_API}/authority/user/import`,
-        exportErrorUrl: `/authority/user/exportError`
+        exportErrorUrl: `/user/exportError`
       },
       userViewVisible: false,
       tableKey: 0,

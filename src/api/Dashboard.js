@@ -1,8 +1,8 @@
 import axiosApi from './AxiosApi.js'
 
 const apiList = {
-  getChart: `/authority/dashboard/chart`,
-  getItem: `/authority/dashboard/item`
+  getChart: `/dashboard/chart`,
+  getItem: `/dashboard/item`
 }
 
 export default {

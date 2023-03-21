@@ -13,7 +13,7 @@ export default {
   enums(data) {
     return axiosApi({
       method: 'POST',
-      url: `/oauth/enums`,
+      url: `/enums`,
       data
     })
   },
@@ -56,7 +56,7 @@ export default {
   // 下载附件
   downloadAttachment(data) {
     return axiosApi({
-      url: `/file/attachment/download`,
+      url: `/attachment/download`,
       method: "get",
       responseType: "blob",
       data
@@ -65,7 +65,7 @@ export default {
   // 根据业务类型/业务id打包下载
   downloadAttachmentBiz(data) {
     return axiosApi({
-      url: `/file/attachment/download/biz`,
+      url: `/attachment/download/biz`,
       method: "get",
       responseType: "blob",
       data

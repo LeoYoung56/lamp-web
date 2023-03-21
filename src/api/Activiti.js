@@ -4,144 +4,144 @@ const apiList = {
   //查询模型
   findModel: {
     method: 'post',
-    url: `/activiti/model/pageModel`
+    url: `/model/pageModel`
   },
   //删除模型
   save: {
     method: 'post',
-    url: `/activiti/model/save`,
+    url: `/model/save`,
     formData: true,
   },
   deleteModel: {
     method: 'delete',
-    url: `/activiti/model/delete`,
+    url: `/model/delete`,
     formData: true,
   },
   //发布流程
   publishModel: {
     method: 'post',
-    url: `/activiti/model/publish`
+    url: `/model/publish`
   },
 
   //查询流程定义
   pageDefinition: {
     method: 'post',
-    url: `/activiti/definition/page`
+    url: `/definition/page`
   },
   deleteDefinition: {
     method: 'delete',
-    url: `/activiti/definition/delete`
+    url: `/definition/delete`
   },
   updateSuspendState: {
     method: 'put',
-    url: `/activiti/definition/updateSuspendState`
+    url: `/definition/updateSuspendState`
   },
   defUpload: {
     method: 'post',
-    url: `/activiti/definition/upload`
+    url: `/definition/upload`
   },
   saveModelByPro: {
     method: 'POST',
-    url: `/activiti/definition/saveModelByPro`
+    url: `/definition/saveModelByPro`
   },
 
   readResource: {
     method: 'get',
-    url: `/activiti/definition/readResource`
+    url: `/definition/readResource`
   },
 
   //表单查询
   formQuery: {
     method: 'post',
-    url: `/activiti/formCore/query`
+    url: `/formCore/query`
   },
 
   formItemQuery: {
     method: 'post',
-    url: `/activiti/formCoreItem/query`
+    url: `/formCoreItem/query`
   },
 
   //流程实例
   updateSuspendStateInst: {
     method: 'get',
-    url: `/activiti/instance/updateSuspendStateInst`
+    url: `/instance/updateSuspendStateInst`
   },
 
   //请假相关实例
   saveInstant: {
     method: 'post',
-    url: `/activiti/bizLeave/save`
+    url: `/bizLeave/save`
   },
   deleteInst: {
     method: 'post',
-    url: `/activiti/bizLeave/delete`
+    url: `/bizLeave/delete`
   },
   pageInstant: {
     method: 'post',
-    url: `/activiti/bizLeave/pageBiz`
+    url: `/bizLeave/pageBiz`
   },
   getDetailInst: {
     method: 'get',
-    url: `/activiti/bizLeave/get`
+    url: `/bizLeave/get`
   },
 
   //报销相关实例
 
   saveInstantReimbursement: {
     method: 'post',
-    url: `/activiti/bizReimbursement/save`
+    url: `/bizReimbursement/save`
   },
   deleteInstReimbursement: {
     method: 'post',
-    url: `/activiti/bizReimbursement/delete`
+    url: `/bizReimbursement/delete`
   },
   pageInstantReimbursement: {
     method: 'post',
-    url: `/activiti/bizReimbursement/pageBiz`
+    url: `/bizReimbursement/pageBiz`
   },
   getDetailInstReimbursement: {
     method: 'get',
-    url: `/activiti/bizReimbursement/get`
+    url: `/bizReimbursement/get`
   },
 
   //待办
   pageTask: {
     method: 'post',
-    url: `/activiti/bizLeave/pageRunTask`
+    url: `/bizLeave/pageRunTask`
   },
   pageHiTask: {
     method: 'post',
-    url: `/activiti/bizLeave/pageHiTask`
+    url: `/bizLeave/pageHiTask`
   },
   pageTaskReimbursement: {
     method: 'post',
-    url: `/activiti/bizReimbursement/pageRunTask`
+    url: `/bizReimbursement/pageRunTask`
   },
   pageHiTaskReimbursement: {
     method: 'post',
-    url: `/activiti/bizReimbursement/pageHiTask`
+    url: `/bizReimbursement/pageHiTask`
   },
   getItemDetail: {
     method: 'get',
-    url: `/activiti/bizItem/get`
+    url: `/bizItem/get`
   },
   getItemList: {
     method: 'get',
-    url: `/activiti/bizItem/find`
+    url: `/bizItem/find`
   },
   saveItem: {
     method: 'post',
-    url: `/activiti/bizItem/save`
+    url: `/bizItem/save`
   },
 
   //任务
   updateAssignee: {
     method: 'get',
-    url: `/activiti/task/updateAssignee`
+    url: `/task/updateAssignee`
   },
   getReadyTaskByInst: {
     method: 'get',
-    url: `/activiti/task/getReadyTaskByInst`
+    url: `/task/getReadyTaskByInst`
   },
 }
 

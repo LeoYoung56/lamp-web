@@ -142,7 +142,7 @@ const httpServer = (opts) => {
   // 生产环境： http://IP:PORT/api   // 生产环境中 代理失效， 故需要配置绝对路径
   const httpDefaultOpts = {
     method,
-    baseURL: process.env.VUE_APP_PROD_REQUEST_DOMAIN_PREFIX + process.env.VUE_APP_BASE_API,
+    baseURL: 'http://192.168.31.114:8761/',
     url: opts.url,
     responseType: opts.responseType || '',
     timeout: opts.custom && opts.custom['timeout'] || 30000
@@ -174,6 +174,8 @@ const httpServer = (opts) => {
       return formData
     }]
   }
+
+  console.log(httpDefaultOpts)
 
   const promise = new Promise((resolve, reject) => {
     axios(httpDefaultOpts).then(response => {

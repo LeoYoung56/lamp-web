@@ -2,32 +2,32 @@ import axiosApi from './AxiosApi.js'
 
 const apiList = {
   page: {
-    url: `/authority/station/page`,
+    url: `/station/page`,
     method: 'POST'
   },
   save: {
-    url: `/authority/station`,
+    url: `/station`,
     method: 'POST'
   },
   update: {
-    url: `/authority/station`,
+    url: `/station`,
     method: 'PUT'
   },
   delete: {
-    url: `/authority/station`,
+    url: `/station`,
     method: 'DELETE'
   },
   preview: {
     method: 'POST',
-    url: `/authority/station/preview`
+    url: `/station/preview`
   },
   export: {
     method: 'POST',
-    url: `/authority/station/export`
+    url: `/station/export`
   },
   import: {
     method: 'POST',
-    url: `/authority/station/import`
+    url: `/station/import`
   }
 }
 

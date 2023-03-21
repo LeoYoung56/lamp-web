@@ -3,39 +3,39 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   page: {
     method: 'POST',
-    url: `/tenant/datasourceConfig/page`
+    url: `/datasourceConfig/page`
   },
   query: {
     method: 'POST',
-    url: `/tenant/datasourceConfig/query`
+    url: `/datasourceConfig/query`
   },
   update: {
     method: 'PUT',
-    url: `/tenant/datasourceConfig`
+    url: `/datasourceConfig`
   },
   save: {
     method: 'POST',
-    url: `/tenant/datasourceConfig`
+    url: `/datasourceConfig`
   },
   delete: {
     method: 'DELETE',
-    url: `/tenant/datasourceConfig`
+    url: `/datasourceConfig`
   },
   export: {
     method: 'POST',
-    url: `/tenant/datasourceConfig/export`
+    url: `/datasourceConfig/export`
   },
   preview: {
     method: 'POST',
-    url: `/tenant/datasourceConfig/preview`
+    url: `/datasourceConfig/preview`
   },
   import: {
     method: 'POST',
-    url: `/tenant/datasourceConfig/import`
+    url: `/datasourceConfig/import`
   },
   testConnect: {
     method: 'POST',
-    url: `/tenant/datasourceConfig/testConnect`
+    url: `/datasourceConfig/testConnect`
   }
 }
 

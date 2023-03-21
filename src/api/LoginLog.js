@@ -3,23 +3,23 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   page: {
     method: 'POST',
-    url: `/authority/loginLog/page`
+    url: `/loginLog/page`
   },
   delete: {
     method: 'DELETE',
-    url: `/authority/loginLog`
+    url: `/loginLog`
   },
   clear: {
     method: 'DELETE',
-    url: `/authority/loginLog/clear`
+    url: `/loginLog/clear`
   },
   preview: {
     method: 'POST',
-    url: `/authority/loginLog/preview`
+    url: `/loginLog/preview`
   },
   export: {
     method: 'POST',
-    url: `/authority/loginLog/export`
+    url: `/loginLog/export`
   }
 }
 

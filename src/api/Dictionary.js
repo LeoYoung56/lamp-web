@@ -3,39 +3,39 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   page: {
     method: 'POST',
-    url:`/authority/dictionary/page`,
+    url:`/dictionary/page`,
   },
   update: {
     method: 'PUT',
-    url: `/authority/dictionary`
+    url: `/dictionary`
   },
   save: {
     method: 'POST',
-    url: `/authority/dictionary`
+    url: `/dictionary`
   },
   delete: {
     method: 'DELETE',
-    url: `/authority/dictionary`
+    url: `/dictionary`
   },
   pageType: {
     method: 'POST',
-    url:`/authority/dictionary/pageType`,
+    url:`/dictionary/pageType`,
   },
   updateType: {
     method: 'PUT',
-    url: `/authority/dictionary/type`
+    url: `/dictionary/type`
   },
   saveType: {
     method: 'POST',
-    url: `/authority/dictionary/type`
+    url: `/dictionary/type`
   },
   deleteType: {
     method: 'DELETE',
-    url: `/authority/dictionary/type`
+    url: `/dictionary/type`
   },
   codes: {
     method: 'POST',
-    url: `/oauth/dictionary/codes`
+    url: `/dictionary/codes`
   },
 }
 

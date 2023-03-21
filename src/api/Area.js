@@ -3,31 +3,31 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   page: {
     method: 'POST',
-    url: `/authority/area/page`,
+    url: `/area/page`,
   },
   update: {
     method: 'PUT',
-    url: `/authority/area`
+    url: `/area`
   },
   save: {
     method: 'POST',
-    url: `/authority/area`
+    url: `/area`
   },
   delete: {
     method: 'DELETE',
-    url: `/authority/area`
+    url: `/area`
   },
   query: {
     method: 'POST',
-    url: `/authority/area/query`
+    url: `/area/query`
   },
   linkage: {
     method: 'GET',
-    url: `/authority/area/linkage`
+    url: `/area/linkage`
   },
   tree: {
     method: 'GET',
-    url: `/authority/area/tree`
+    url: `/area/tree`
   },
 }
 
@@ -77,7 +77,7 @@ export default {
   check(code, id) {
     return axiosApi({
       method: 'GET',
-      url: `/authority/area/check/` + code,
+      url: `/area/check/` + code,
       data: {id: id}
     })
   }

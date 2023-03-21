@@ -2,40 +2,40 @@ import axiosApi from './AxiosApi.js'
 
 const apiList = {
   page: {
-    url: `/authority/role/page`,
+    url: `/role/page`,
     method: 'POST'
   },
   save: {
-    url: `/authority/role`,
+    url: `/role`,
     method: 'POST'
   },
   update: {
-    url: `/authority/role`,
+    url: `/role`,
     method: 'PUT'
   },
   delete: {
-    url: `/authority/role`,
+    url: `/role`,
     method: 'DELETE'
   },
   saveUserRole: {
-    url: `/authority/role/saveUserRole`,
+    url: `/role/saveUserRole`,
     method: 'POST'
   },
   saveRoleAuthority: {
-    url: `/authority/role/saveResource`,
+    url: `/role/saveResource`,
     method: 'POST'
   },
   preview: {
     method: 'POST',
-    url: `/authority/role/preview`
+    url: `/role/preview`
   },
   export: {
     method: 'POST',
-    url: `/authority/role/export`
+    url: `/role/export`
   },
   import: {
     method: 'POST',
-    url: `/authority/role/import`
+    url: `/role/import`
   }
 }
 
@@ -67,20 +67,20 @@ export default {
   },
   get (id) {
     return axiosApi({
-      url: `/authority/role/${id}`,
+      url: `/role/${id}`,
       method: 'GET'
     })
   },
   getDetails (id) {
     return axiosApi({
-      url: `/authority/role/details`,
+      url: `/role/details`,
       method: 'GET',
       data: { id }
     })
   },
   check (code) {
     return axiosApi({
-      url: `/authority/role/check`,
+      url: `/role/check`,
       method: 'GET',
       data: { code }
     })
@@ -93,14 +93,14 @@ export default {
   },
   findUserIdByRoleId (roleId) {
     return axiosApi({
-      url: `/authority/role/userList`,
+      url: `/role/userList`,
       method: 'GET',
       data: { roleId }
     })
   },
   findAuthorityIdByRoleId (roleId) {
     return axiosApi({
-      url: `/authority/role/resourceList`,
+      url: `/role/resourceList`,
       method: 'GET',
       data: { roleId }
     })

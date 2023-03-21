@@ -2,40 +2,40 @@ import axiosApi from './AxiosApi.js'
 
 const apiList = {
   page: {
-    url: `/authority/globalUser/page`,
+    url: `/globalUser/page`,
     method: 'POST'
   },
   save: {
     method: 'POST',
-    url: `/authority/globalUser`
+    url: `/globalUser`
   },
   update: {
     method: 'PUT',
-    url: `/authority/globalUser`
+    url: `/globalUser`
   },
   remove: {
     method: 'DELETE',
-    url: `/authority/globalUser/delete`
+    url: `/globalUser/delete`
   },
   check: {
     method: 'GET',
-    url: `/authority/globalUser/check`
+    url: `/globalUser/check`
   },
   preview: {
     method: 'POST',
-    url: `/authority/globalUser/preview`
+    url: `/globalUser/preview`
   },
   export: {
     method: 'POST',
-    url: `/authority/globalUser/export`
+    url: `/globalUser/export`
   },
   import: {
     method: 'POST',
-    url: `/authority/globalUser/import`
+    url: `/globalUser/import`
   },
   reset: {
     method: 'PUT',
-    url: `/authority/globalUser/reset`
+    url: `/globalUser/reset`
   }
 }
 

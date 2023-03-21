@@ -3,19 +3,19 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   page: {
     method: 'POST',
-    url: `/authority/resource/page`
+    url: `/resource/page`
   },
   save: {
     method: 'POST',
-    url: `/authority/resource`
+    url: `/resource`
   },
   update: {
     method: 'PUT',
-    url: `/authority/resource`
+    url: `/resource`
   },
   delete: {
     method: 'DELETE',
-    url: `/authority/resource`
+    url: `/resource`
   }
 }
 

@@ -11,13 +11,15 @@ const name = settings.title // page title
 // For example, Mac: sudo npm run
 // const port = 9527 // dev port
 
+console.log("llll")
+
 const targetUrl = process.env.VUE_APP_DEV_REQUEST_DOMAIN_PREFIX
 const proxyUrl = process.env.VUE_APP_BASE_API
 
-// console.log(process.env.VUE_APP_DEV_REQUEST_DOMAIN_PREFIX)
-// console.log(process.env.VUE_APP_BASE_API)
-// console.log(process.env.VUE_APP_PROD_REQUEST_DOMAIN_PREFIX)
-// console.log(process.env)
+console.log(process.env.VUE_APP_DEV_REQUEST_DOMAIN_PREFIX)
+console.log(process.env.VUE_APP_BASE_API)
+console.log(process.env.VUE_APP_PROD_REQUEST_DOMAIN_PREFIX)
+console.log(process.env)
 
 // All configuration item explanations can be find in https://cli.vuejs.org/config/
 module.exports = {
@@ -50,17 +52,17 @@ module.exports = {
         changeOrigin: true,
         pathRewrite: {
           // lamp-boot 项目 请使用以下的配置
-          // ['^/api/tenant/']: '/',
-          // ['^/api/oauth/']: '/',
-          // ['^/api/authority/']: '/',
-          // ['^/api/msg/']: '/',
-          // ['^/api/file/']: '/',
-          // ['^/api/gateway/']: '/gateway',
-          // ['^/api/gate/']: '/',
-          // ['^/api/activiti/']: '/',
+          ['^/tenant/']: '/',
+          ['^/oauth/']: '/',
+          ['^/authority/']: '/',
+          ['^/msg/']: '/',
+          ['^/file/']: '/',
+          ['^/gateway/']: '/gateway',
+          ['^/gate/']: '/',
+          ['^/activiti/']: '/',
 
           // lamp-cloud  项目使用这段配置
-          ['^' + proxyUrl]: proxyUrl,
+          // ['^' + proxyUrl]: proxyUrl,
         }
       }
     }

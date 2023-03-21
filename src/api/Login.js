@@ -1,11 +1,11 @@
 import axiosApi from './AxiosApi.js'
 
 const apiList = {
-  captcha: `/oauth/anno/captcha`,
-  login: `/oauth/noToken/login`,
-  logout: `/oauth/noToken/logout`,
-  router: `/oauth/menu/router`,
-  resource: `/oauth/resource/visible`,
+  captcha: `/anno/captcha`,
+  login: `/noToken/login`,
+  logout: `/noToken/logout`,
+  router: `/menu/router`,
+  resource: `/resource/visible`,
 }
 
 export default {

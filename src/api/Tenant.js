@@ -3,47 +3,47 @@ import axiosApi from './AxiosApi.js'
 const apiList = {
   page: {
     method: 'POST',
-    url: `/tenant/tenant/page`
+    url: `/tenant/page`
   },
   update: {
     method: 'PUT',
-    url: `/tenant/tenant`
+    url: `/tenant`
   },
   save: {
     method: 'POST',
-    url: `/tenant/tenant`
+    url: `/tenant`
   },
   saveInit: {
     method: 'POST',
-    url: `/tenant/tenant/init`
+    url: `/tenant/init`
   },
   updateStatus: {
     method: 'POST',
-    url: `/tenant/tenant/status`
+    url: `/tenant/status`
   },
   remove: {
     method: 'DELETE',
-    url: `/tenant/tenant/deleteAll`
+    url: `/tenant/deleteAll`
   },
   list: {
     method: 'POST',
-    url: `/tenant/tenant/query`
+    url: `/tenant/query`
   },
   preview: {
     method: 'POST',
-    url: `/tenant/tenant/preview`
+    url: `/tenant/preview`
   },
   export: {
     method: 'POST',
-    url: `/tenant/tenant/export`
+    url: `/tenant/export`
   },
   import: {
     method: 'POST',
-    url: `/tenant/tenant/import`
+    url: `/tenant/import`
   },
   initConnect: {
     method: 'POST',
-    url: `/tenant/tenant/initConnect`
+    url: `/tenant/initConnect`
   }
 }
 
@@ -95,7 +95,7 @@ export default {
   check (code) {
     return axiosApi({
       method: 'GET',
-      url: `/tenant/tenant/check/${code}`
+      url: `/tenant/check/${code}`
     })
   },
   preview (data) {
